@@ -230,7 +230,7 @@ const Groups = () => {
                 <h3>Task List</h3>
                 <section className="task__section">
                   <DragDropContext onDragEnd={handleOnDragEnd}>
-                    <Droppable droppableId={selectGroup?._id}>
+                    <Droppable droppableId={selectGroup?._id + new Date()}>
                       {(provided) => (
                         <ul
                           className="characters"
